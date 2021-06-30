@@ -1,10 +1,10 @@
 // Copyright (c) 2019-2020 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Whatcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_UNORDERED_LRU_CACHE_H
-#define RAPTOREUM_UNORDERED_LRU_CACHE_H
+#ifndef WHATCOIN_UNORDERED_LRU_CACHE_H
+#define WHATCOIN_UNORDERED_LRU_CACHE_H
 
 #include <unordered_map>
 
@@ -108,4 +108,4 @@ private:
     }
 };
 
-#endif // RAPTOREUM_UNORDERED_LRU_CACHE_H
+#endif // WHATCOIN_UNORDERED_LRU_CACHE_H

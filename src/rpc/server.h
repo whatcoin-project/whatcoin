@@ -137,7 +137,7 @@ public:
 };
 
 /**
- * Raptoreum RPC command dispatcher.
+ * Whatcoin RPC command dispatcher.
  */
 class CRPCTable
 {

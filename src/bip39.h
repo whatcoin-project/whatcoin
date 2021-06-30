@@ -21,8 +21,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef RAPTOREUM_BIP39_H
-#define RAPTOREUM_BIP39_H
+#ifndef WHATCOIN_BIP39_H
+#define WHATCOIN_BIP39_H
 
 #include "support/allocators/secure.h"
 

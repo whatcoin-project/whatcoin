@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Whatcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -326,8 +326,8 @@ void CPrivateSend::InitStandardDenominations()
         is convertible to another.
 
         For example:
-        100RTM+1000 == (10RTM+100)*10
-        10RM+10000 == (1RTM+1000)*10
+        100WATC+1000 == (10WATC+100)*10
+        10RM+10000 == (1WATC+1000)*10
     */
     /* Disabled
     vecStandardDenominations.push_back( (100      * COIN)+100000 );
@@ -477,10 +477,10 @@ int CPrivateSend::GetDenominations(const std::vector<CTxOut>& vecTxOut, bool fSi
 bool CPrivateSend::GetDenominationsBits(int nDenom, std::vector<int>& vecBitsRet)
 {
     // ( bit on if present, 4 denominations example )
-    // bit 0 - 100RAPTOREUM+1
-    // bit 1 - 10RAPTOREUM+1
-    // bit 2 - 1RAPTOREUM+1
-    // bit 3 - .1RAPTOREUM+1
+    // bit 0 - 100WHATCOIN+1
+    // bit 1 - 10WHATCOIN+1
+    // bit 2 - 1WHATCOIN+1
+    // bit 3 - .1WHATCOIN+1
 
     int nMaxDenoms = vecStandardDenominations.size();
 

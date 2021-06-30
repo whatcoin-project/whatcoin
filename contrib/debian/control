@@ -1,8 +1,8 @@
-Source: raptoreum
+Source: whatcoin
 Section: utils
 Priority: optional
-Maintainer: Holger Schinzel <holger@raptoreum.org>
-Uploaders: Holger Schinzel <holger@raptoreum.org>
+Maintainer: Holger Schinzel <holger@whatcoin.org>
+Uploaders: Holger Schinzel <holger@whatcoin.org>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -26,45 +26,45 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://www.raptoreum.org/
-Vcs-Git: git://github.com/raptoreum/raptoreum.git
-Vcs-Browser: https://github.com/raptoreum/raptoreum
+Homepage: https://www.whatcoin.org/
+Vcs-Git: git://github.com/whatcoin/whatcoin.git
+Vcs-Browser: https://github.com/whatcoin/whatcoin
 
-Package: raptoreumd
+Package: whatcoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Raptoreum is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Raptoreum uses peer-to-peer
+ Whatcoin is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Whatcoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Raptoreum Core
+ and issuing money are carried out collectively by the network. Whatcoin Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides the daemon, raptoreumd, and the CLI tool
- raptoreum-cli to interact with the daemon.
+ This package provides the daemon, whatcoind, and the CLI tool
+ whatcoin-cli to interact with the daemon.
 
-Package: raptoreum-qt
+Package: whatcoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Raptoreum is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Raptoreum uses peer-to-peer
+ Whatcoin is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Whatcoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Raptoreum Core
+ and issuing money are carried out collectively by the network. Whatcoin Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides Raptoreum-Qt, a GUI for Raptoreum based on Qt.
+ This package provides Whatcoin-Qt, a GUI for Whatcoin based on Qt.
 
-Package: raptoreum-tx
+Package: whatcoin-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- Raptoreum is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Raptoreum uses peer-to-peer
+ Whatcoin is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Whatcoin uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. Raptoreum Core
+ and issuing money are carried out collectively by the network. Whatcoin Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides raptoreum-tx, a command-line transaction creation
- tool which can be used without a raptoreum daemon.  Some means of
+ This package provides whatcoin-tx, a command-line transaction creation
+ tool which can be used without a whatcoin daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

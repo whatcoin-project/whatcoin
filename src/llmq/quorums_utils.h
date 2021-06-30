@@ -1,10 +1,10 @@
 // Copyright (c) 2018-2019 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Whatcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_QUORUMS_UTILS_H
-#define RAPTOREUM_QUORUMS_UTILS_H
+#ifndef WHATCOIN_QUORUMS_UTILS_H
+#define WHATCOIN_QUORUMS_UTILS_H
 
 #include "consensus/params.h"
 #include "net.h"
@@ -70,4 +70,4 @@ public:
 
 } // namespace llmq
 
-#endif//RAPTOREUM_QUORUMS_UTILS_H
+#endif//WHATCOIN_QUORUMS_UTILS_H

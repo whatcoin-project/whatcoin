@@ -1,12 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Whatcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/raptoreum-config.h"
+#include "config/whatcoin-config.h"
 #endif
 
 #include "init.h"
@@ -221,7 +221,7 @@ void PrepareShutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("raptoreum-shutoff");
+    RenameThread("whatcoin-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopHTTPRPC();
     StopREST();
@@ -598,8 +598,8 @@ std::string HelpMessage(HelpMessageMode mode)
     }
     strUsage += HelpMessageOpt("-shrinkdebugfile", _("Shrink debug.log file on client startup (default: 1 when no -debug)"));
     AppendParamsHelpMessages(strUsage, showDebug);
-    strUsage += HelpMessageOpt("-litemode", strprintf(_("Disable all Raptoreum specific functionality (Smartnodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)"), 0));
-    strUsage += HelpMessageOpt("-sporkaddr=<raptoreumaddress>", strprintf(_("Override spork address. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.")));
+    strUsage += HelpMessageOpt("-litemode", strprintf(_("Disable all Whatcoin specific functionality (Smartnodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)"), 0));
+    strUsage += HelpMessageOpt("-sporkaddr=<whatcoinaddress>", strprintf(_("Override spork address. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.")));
     strUsage += HelpMessageOpt("-minsporkkeys=<n>", strprintf(_("Overrides minimum spork signers to change spork value. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.")));
 
     strUsage += HelpMessageGroup(_("Smartnode options:"));
@@ -661,8 +661,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/raptoreum/raptoreum>";
-    const std::string URL_WEBSITE = "<https://raptoreum.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/whatcoin/whatcoin>";
+    const std::string URL_WEBSITE = "<https://whatcoin.org>";
 
     return CopyrightHolders(_("Copyright (C)"), 2014, COPYRIGHT_YEAR) + "\n" +
            "\n" +
@@ -765,7 +765,7 @@ void CleanupBlockRevFiles()
 void ThreadImport(std::vector<fs::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
-    RenameThread("raptoreum-loadblk");
+    RenameThread("whatcoin-loadblk");
 
     {
     CImportingNow imp;
@@ -867,7 +867,7 @@ void ThreadImport(std::vector<fs::path> vImportFiles)
 }
 
 /** Sanity checks
- *  Ensure that Raptoreum Core is running in a usable environment with all
+ *  Ensure that Whatcoin Core is running in a usable environment with all
  *  necessary library support.
  */
 bool InitSanityCheck(void)
@@ -1026,7 +1026,7 @@ void InitLogging()
     fLogIPs = gArgs.GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Raptoreum Core version %s\n", FormatFullVersion());
+    LogPrintf("Whatcoin Core version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only
@@ -1462,7 +1462,7 @@ static bool LockDataDirectory(bool probeOnly)
 {
     std::string strDataDir = GetDataDir().string();
 
-    // Make sure only a single Raptoreum Core process is using the data directory.
+    // Make sure only a single Whatcoin Core process is using the data directory.
     fs::path pathLockFile = GetDataDir() / ".lock";
     FILE* file = fsbridge::fopen(pathLockFile, "a"); // empty lock file; created if it doesn't exist.
     if (file) fclose(file);
@@ -1600,7 +1600,7 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
     keePassInt.init();
 #endif // ENABLE_WALLET
     bool fGenerate = gArgs.GetBoolArg("-regtest", false) ? false : DEFAULT_GENERATE;
-	GenerateRaptoreums(fGenerate, gArgs.GetArg("-genproclimit", DEFAULT_GENERATE_THREADS), chainparams);
+	GenerateWhatcoins(fGenerate, gArgs.GetArg("-genproclimit", DEFAULT_GENERATE_THREADS), chainparams);
     // ********************************************************* Step 6: network initialization
     // Note that we absolutely cannot open any actual connections
     // until the very end ("start node") as the UTXO/block state
@@ -1725,16 +1725,16 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     // ********************************************************* Step 7a: check lite mode and load sporks
 
-    // lite mode disables all Raptoreum-specific functionality
+    // lite mode disables all Whatcoin-specific functionality
     fLiteMode = gArgs.GetBoolArg("-litemode", false);
     LogPrintf("fLiteMode %d\n", fLiteMode);
 
     if(fLiteMode) {
-        InitWarning(_("You are starting in lite mode, most Raptoreum-specific functionality is disabled."));
+        InitWarning(_("You are starting in lite mode, most Whatcoin-specific functionality is disabled."));
     }
 
     if((!fLiteMode && fTxIndex == false)
-       && chainparams.NetworkIDString() != CBaseChainParams::REGTEST) { // TODO remove this when pruning is fixed. See https://github.com/raptoreum/raptoreum/pull/1817 and https://github.com/raptoreum/raptoreum/pull/1743
+       && chainparams.NetworkIDString() != CBaseChainParams::REGTEST) { // TODO remove this when pruning is fixed. See https://github.com/whatcoin/whatcoin/pull/1817 and https://github.com/whatcoin/whatcoin/pull/1743
         return InitError(_("Transaction index can't be disabled in full mode. Either start with -litemode command line switch or enable transaction index."));
     }
 
@@ -2131,7 +2131,7 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
         }
     }
 
-    // ********************************************************* Step 10c: schedule Raptoreum-specific tasks
+    // ********************************************************* Step 10c: schedule Whatcoin-specific tasks
 
     if (!fLiteMode) {
         scheduler.scheduleEvery(boost::bind(&CNetFulfilledRequestManager::DoMaintenance, boost::ref(netfulfilledman)), 60 * 1000);

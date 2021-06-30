@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2019 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Whatcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,9 +20,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(RTM);
-    unitlist.append(mRTM);
-    unitlist.append(uRTM);
+    unitlist.append(WATC);
+    unitlist.append(mWATC);
+    unitlist.append(uWATC);
     unitlist.append(ruffs);
     return unitlist;
 }
@@ -31,9 +31,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case RTM:
-    case mRTM:
-    case uRTM:
+    case WATC:
+    case mWATC:
+    case uWATC:
     case ruffs:
         return true;
     default:
@@ -47,9 +47,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case RTM: return QString("RTM");
-            case mRTM: return QString("mRTM");
-            case uRTM: return QString::fromUtf8("μRTM");
+            case WATC: return QString("WATC");
+            case mWATC: return QString("mWATC");
+            case uWATC: return QString::fromUtf8("μWATC");
             case ruffs: return QString("ruffs");
             default: return QString("???");
         }
@@ -58,9 +58,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case RTM: return QString("tRTM");
-            case mRTM: return QString("mtRTM");
-            case uRTM: return QString::fromUtf8("μtRTM");
+            case WATC: return QString("tWATC");
+            case mWATC: return QString("mtWATC");
+            case uWATC: return QString::fromUtf8("μtWATC");
             case ruffs: return QString("tduffs");
             default: return QString("???");
         }
@@ -73,10 +73,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case RTM: return QString("Raptoreum");
-            case mRTM: return QString("Milli-Raptoreum (1 / 1" THIN_SP_UTF8 "000)");
-            case uRTM: return QString("Micro-Raptoreum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case ruffs: return QString("Ten Nano-Raptoreum (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case WATC: return QString("Whatcoin");
+            case mWATC: return QString("Milli-Whatcoin (1 / 1" THIN_SP_UTF8 "000)");
+            case uWATC: return QString("Micro-Whatcoin (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case ruffs: return QString("Ten Nano-Whatcoin (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -84,10 +84,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case RTM: return QString("TestRaptoreums");
-            case mRTM: return QString("Milli-TestRaptoreum (1 / 1" THIN_SP_UTF8 "000)");
-            case uRTM: return QString("Micro-TestRaptoreum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case ruffs: return QString("Ten Nano-TestRaptoreum (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case WATC: return QString("TestWhatcoins");
+            case mWATC: return QString("Milli-TestWhatcoin (1 / 1" THIN_SP_UTF8 "000)");
+            case uWATC: return QString("Micro-TestWhatcoin (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case ruffs: return QString("Ten Nano-TestWhatcoin (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -97,9 +97,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case RTM:  return 100000000;
-    case mRTM: return 100000;
-    case uRTM: return 100;
+    case WATC:  return 100000000;
+    case mWATC: return 100000;
+    case uWATC: return 100;
     case ruffs: return 1;
     default:   return 100000000;
     }
@@ -109,9 +109,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case RTM: return 8;
-    case mRTM: return 5;
-    case uRTM: return 2;
+    case WATC: return 8;
+    case mWATC: return 5;
+    case uWATC: return 2;
     case ruffs: return 0;
     default: return 0;
     }

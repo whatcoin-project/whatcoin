@@ -1,11 +1,11 @@
 Benchmarking
 ============
 
-Raptoreum Core has an internal benchmarking framework, with benchmarks
+Whatcoin Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
-After compiling Raptoreum Core, the benchmarks can be run with:
-`src/bench/bench_raptoreum`
+After compiling Whatcoin Core, the benchmarks can be run with:
+`src/bench/bench_whatcoin`
 
 The output will look similar to:
 ```

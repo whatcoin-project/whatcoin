@@ -1,10 +1,10 @@
 <!--- Remove sections that do not apply -->
 
-This issue tracker is only for technical issues related to Raptoreum Core.
+This issue tracker is only for technical issues related to Whatcoin Core.
 
-General Raptoreum questions and/or support requests and are best directed to the [Raptoreum Reddit](https://www.reddit.com/r/raptoreum/).
+General Whatcoin questions and/or support requests and are best directed to the [Whatcoin Reddit](https://www.reddit.com/r/whatcoin/).
 
-To report critical security issues, email infosec@raptoreum.org and/or see the RAPTOREUM bug bounty program on [Bugcrowd](https://bugcrowd.com/raptoreumdigitalcash) instead of creating Github issues.
+To report critical security issues, email infosec@whatcoin.org and/or see the WHATCOIN bug bounty program on [Bugcrowd](https://bugcrowd.com/whatcoindigitalcash) instead of creating Github issues.
 
 ### Describe the issue
 
@@ -23,7 +23,7 @@ Tell us what happens instead
 ### Screenshots.
 If the issue is related to the GUI, screenshots can be added to this issue via drag & drop.
 
-### What version of Raptoreum Core are you using?
+### What version of Whatcoin Core are you using?
 List the version number/commit ID, and if it is an official binary, self compiled or a distribution package such as PPA.
 
 ### Machine specs:

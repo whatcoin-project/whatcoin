@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: raptoreumd.service
-Upstart: raptoreumd.conf
-OpenRC:  raptoreumd.openrc
-         raptoreumd.openrcconf
-CentOS:  raptoreumd.init
-OS X:    org.raptoreum.raptoreumd.plist
+SystemD: whatcoind.service
+Upstart: whatcoind.conf
+OpenRC:  whatcoind.openrc
+         whatcoind.openrcconf
+CentOS:  whatcoind.init
+OS X:    org.whatcoin.whatcoind.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

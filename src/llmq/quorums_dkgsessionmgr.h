@@ -1,10 +1,10 @@
 // Copyright (c) 2018-2019 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Whatcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_QUORUMS_DKGSESSIONMGR_H
-#define RAPTOREUM_QUORUMS_DKGSESSIONMGR_H
+#ifndef WHATCOIN_QUORUMS_DKGSESSIONMGR_H
+#define WHATCOIN_QUORUMS_DKGSESSIONMGR_H
 
 #include "llmq/quorums_dkgsessionhandler.h"
 
@@ -77,4 +77,4 @@ extern CDKGSessionManager* quorumDKGSessionManager;
 
 } // namespace llmq
 
-#endif //RAPTOREUM_QUORUMS_DKGSESSIONMGR_H
+#endif //WHATCOIN_QUORUMS_DKGSESSIONMGR_H

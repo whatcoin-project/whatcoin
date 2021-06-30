@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Whatcoin Core
+Comment=Whatcoin P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Whatcoin peer-to-peer Netzwerk
+Comment[fr]=Whatcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Whatcoin, eşten eşe kriptografik sanal para birimi
+Exec=whatcoin-qt %u
+Terminal=false
+Type=Application
+Icon=whatcoin128
+MimeType=x-scheme-handler/whatcoin;
+Categories=Office;Finance;

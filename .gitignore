@@ -6,14 +6,14 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/raptoreum
-src/raptoreumd
-src/raptoreum-cli
-src/raptoreum-tx
-src/test/test_raptoreum
-src/test/test_raptoreum_fuzzy
-src/qt/test/test_raptoreum-qt
-src/bench/bench_raptoreum
+src/whatcoin
+src/whatcoind
+src/whatcoin-cli
+src/whatcoin-tx
+src/test/test_whatcoin
+src/test/test_whatcoin_fuzzy
+src/qt/test/test_whatcoin-qt
+src/bench/bench_whatcoin
 
 # autoreconf
 Makefile.in
@@ -36,8 +36,8 @@ config.log
 config.status
 configure
 libtool
-src/config/raptoreum-config.h
-src/config/raptoreum-config.h.in
+src/config/whatcoin-config.h
+src/config/whatcoin-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -82,13 +82,13 @@ libconftest.dylib*
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-raptoreum-qt
-Raptoreum-Qt.app
+whatcoin-qt
+Whatcoin-Qt.app
 !/depends/Makefile
 
 # Unit-tests
 Makefile.test
-raptoreum-qt_test
+whatcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -101,7 +101,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_raptoreum.coverage/
+test_whatcoin.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -119,15 +119,15 @@ test/cache/*
 .autotools
 /doc/doxygen/
 
-libraptoreumconsensus.pc
+libwhatcoinconsensus.pc
 contrib/devtools/split-debug.sh
-src/qt/raptoreum-qt.bash
+src/qt/whatcoin-qt.bash
 qa/pull-tester/tests-config.sh
 
 #development symlinks
-raptoreum-cli
-raptoreumd
-raptoreum-qt
+whatcoin-cli
+whatcoind
+whatcoin-qt
 make
 
 /docker/bin

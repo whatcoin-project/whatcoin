@@ -1,10 +1,10 @@
 // Copyright (c) 2018-2020 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Whatcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_CRYPTO_BLS_WORKER_H
-#define RAPTOREUM_CRYPTO_BLS_WORKER_H
+#ifndef WHATCOIN_CRYPTO_BLS_WORKER_H
+#define WHATCOIN_CRYPTO_BLS_WORKER_H
 
 #include "bls.h"
 
@@ -203,4 +203,4 @@ private:
     }
 };
 
-#endif //RAPTOREUM_CRYPTO_BLS_WORKER_H
+#endif //WHATCOIN_CRYPTO_BLS_WORKER_H

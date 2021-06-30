@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package raptoreumd/raptoreum-qt
-for Debian-based Linux systems. If you compile raptoreumd/raptoreum-qt yourself, there are some useful files here.
+This directory contains files used to package whatcoind/whatcoin-qt
+for Debian-based Linux systems. If you compile whatcoind/whatcoin-qt yourself, there are some useful files here.
 
-## raptoreum: URI support ##
+## whatcoin: URI support ##
 
 
-raptoreum-qt.desktop  (Gnome / Open Desktop)
+whatcoin-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install raptoreum-qt.desktop
+	sudo desktop-file-install whatcoin-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your raptoreum-qt binary to `/usr/bin`
-and the `../../share/pixmaps/raptoreum128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your whatcoin-qt binary to `/usr/bin`
+and the `../../share/pixmaps/whatcoin128.png` to `/usr/share/pixmaps`
 
-raptoreum-qt.protocol (KDE)
+whatcoin-qt.protocol (KDE)
 

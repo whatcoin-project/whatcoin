@@ -684,16 +684,16 @@ QDialog#HelpMessageDialog QScrollArea * {
 background-color:#ffffff;
 }
 
-/* About Raptoreum Dialog */
+/* About Whatcoin Dialog */
 QDialog#AboutDialog {
 background-color:#F8F6F6;
 }
 
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Raptoreum Contents */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Whatcoin Contents */
 margin-left:10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About Raptoreum text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About Whatcoin text */
 margin-right:10px;
 }
 

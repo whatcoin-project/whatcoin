@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both raptoreumd and raptoreum-qt, to make it harder for attackers to
+ * for both whatcoind and whatcoin-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Raptoreum Core");
+const std::string CLIENT_NAME("Whatcoin Core");
 
 /**
  * Client version number

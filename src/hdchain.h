@@ -1,8 +1,8 @@
 // Copyright (c) 2014-2019 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Whatcoin developers
 // Distributed under the MIT software license, see the accompanying
-#ifndef RAPTOREUM_HDCHAIN_H
-#define RAPTOREUM_HDCHAIN_H
+#ifndef WHATCOIN_HDCHAIN_H
+#define WHATCOIN_HDCHAIN_H
 
 #include "key.h"
 #include "sync.h"
@@ -148,4 +148,4 @@ public:
     std::string GetKeyPath() const;
 };
 
-#endif // RAPTOREUM_HDCHAIN_H
+#endif // WHATCOIN_HDCHAIN_H

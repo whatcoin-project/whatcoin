@@ -1,10 +1,10 @@
 // Copyright (c) 2018-2020 The Dash Core developers
-// Copyright (c) 2020 The Raptoreum developers
+// Copyright (c) 2020 The Whatcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAPTOREUM_QUORUMS_DKGSESSION_H
-#define RAPTOREUM_QUORUMS_DKGSESSION_H
+#ifndef WHATCOIN_QUORUMS_DKGSESSION_H
+#define WHATCOIN_QUORUMS_DKGSESSION_H
 
 #include "consensus/params.h"
 #include "net.h"
@@ -343,4 +343,4 @@ void SetSimulatedDKGErrorRate(const std::string& type, double rate);
 
 } // namespace llmq
 
-#endif //RAPTOREUM_QUORUMS_DKGSESSION_H
+#endif //WHATCOIN_QUORUMS_DKGSESSION_H
