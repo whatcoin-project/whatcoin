@@ -508,7 +508,7 @@
                </font>
               </property>
               <property name="text">
-               <string notr="true">0 WHATCOIN</string>
+               <string notr="true">0 WATC</string>
               </property>
              </widget>
             </item>
@@ -522,7 +522,7 @@
             <item row="3" column="1">
              <widget class="QLabel" name="labelAmountRounds">
               <property name="text">
-               <string>0 WHATCOIN / 0 Rounds</string>
+               <string>0 WATC / 0 Rounds</string>
               </property>
              </widget>
             </item>
