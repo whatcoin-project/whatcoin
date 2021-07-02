@@ -4,7 +4,7 @@ This issue tracker is only for technical issues related to Whatcoin Core.
 
 General Whatcoin questions and/or support requests and are best directed to the [Whatcoin Reddit](https://www.reddit.com/r/whatcoin/).
 
-To report critical security issues, email infosec@whatcoin.org and/or see the WHATCOIN bug bounty program on [Bugcrowd](https://bugcrowd.com/whatcoindigitalcash) instead of creating Github issues.
+To report critical security issues, email infosec@whatcoin.cash and/or see the WHATCOIN bug bounty program on [Bugcrowd](https://bugcrowd.com/whatcoindigitalcash) instead of creating Github issues.
 
 ### Describe the issue
 

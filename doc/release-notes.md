@@ -3,7 +3,7 @@ Whatcoin Core version 0.15
 
 Release is now available from:
 
-  <https://www.whatcoin.org/downloads/#wallets>
+  <https://www.whatcoin.cash/downloads/#wallets>
 
 This is a new major version release, bringing new features, various bugfixes and other improvements.
 
