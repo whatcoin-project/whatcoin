@@ -1,23 +1,17 @@
 
 What is Whatcoin?
 -------------
-
-The name Whatcoin is derived from the Victoria term for a bird of prey and ium/eum place for a pertaining to in this case birds of prey. The name comes from the team’s extensive experience in the security field with top level skills covering all aspects of it. This is a unique strength in the crypto community and will leverage well into a successful project.
+The name Whatcoin is what we came up with after over a week of complete failures. We're gonna be honest here folks, Whatcoin is a fork of [Raptoreum](https://raptoreum.com/).  They created the Ghostrider algo, we just liked it so much, we decided to spread it around a bit.
 
 Introduction
-Whatcoin began as the fairly simple idea, introducing smart contracts which would allow on chain, trustless transfers (goodbye centralized marketplaces) on the Ravencoin codebase, however with the automation of assets and WATC (Whatcoin). 
-The project has quickly evolved, adding innovative features that not only further expand the asset layer, but also introduce features that could help other Blockchain projects. Ravencoin unfortunately suffered several serious breaches of its asset layer so that code base has been abandoned by us. We are currently working with and building on Dash code expending its capabilities significantly.
+-----
+Whatcoin began as the fairly simple idea, spread ghostrider into more by leveraging smart contracts, trustless transfers and the automation of assets and WATC (Whatcoin). 
 
-Whatcoin is now a code fork of Dash and inherits current and optionally future features such as chain locks, oracles etc. We are further expanding capabilities by adding the following features:
-A)	The deployment of a unique asset layer.
-B)	The option to lock X amount of coins or assets into a special transaction. Coins are unlocked at a block number of choice or timestamp.
-C)	Trustless on chain transfers of assets and native coins VIA Smart Contracts.
-D)	Integrating, developing and deploying a VM protocol that would allow for smart contracts in 4 major programming languages as opposed to the situation with Ethereum being limited to solidity.
+The project is still new, we do not have an official roadmap.  We have memes and coins.
 
-These additional features open up the power and ease of use of Whatcoin’s features to a greater variety of industries under the Distributed Application umbrella. DAPP's are a critical part of driving widespread adoption as recently seen with DEFI and Whatcoin hopes to help provide further alternatives and possibilities for DAPP developers particularly in the field of opening up new programming languages for DAPP and contract development.
+Whatcoin is a fork of Raptoreum, which forked Dash.
 
-It is one of our goals to not only innovate ideas for Whatcoin but to contribute back to the general crypto community with open-source features that anybody can use to help their Blockchain projects succeed.
-
+Our hope is to contriubte to the community by sharing Ghostrider with more users, demonstratie its ASIC resiliance and providing lots and lots of rain.
 
 License
 -------
