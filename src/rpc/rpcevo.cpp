@@ -106,7 +106,7 @@ std::string GetHelpString(int nParamNum, std::string strParamName)
             "%d. collateralIndex            (numeric, required) The collateral transaction output index.\n"
         },
         {"feeSourceAddress",
-            "%d. \"feeSourceAddress\"         (string, optional) If specified wallet will only use coins from this address to fund ProTx.\n"
+            "%d. \"feeSourceAddress\"         (string, required) If specified wallet will only use coins from this address to fund ProTx.\n"
             "                              If not specified, payoutAddress is the one that is going to be used.\n"
             "                              The private key belonging to this address must be known in your wallet.\n"
         },
