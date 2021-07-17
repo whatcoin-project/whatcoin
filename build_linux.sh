@@ -25,4 +25,4 @@ echo "Starting Linux build.. go pour yourself a coke"
     mkdir ./whatcoin-linux
 	cp src/whatcoind src/whatcoin-cli src/whatcoin-tx src/qt/whatcoin-qt ./whatcoin-linux/
 	zip Whatcoin-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip ./whatcoin-linux
-	rm -f ./whatcoin-linux
+	rm -rf ./whatcoin-linux
