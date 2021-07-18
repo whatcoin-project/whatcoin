@@ -441,6 +441,12 @@ public:
         vSeeds.emplace_back("seed2.whatcoin.cash", true);
         vSeeds.emplace_back("seed3.whatcoin.cash", true);
     	vSeeds.emplace_back("seed4.whatcoin.cash", true);
+    	vSeeds.emplace_back("seed5.whatcoin.cash", true);
+    	vSeeds.emplace_back("seed6.whatcoin.cash", true);
+    	vSeeds.emplace_back("seed7.whatcoin.cash", true);
+    	vSeeds.emplace_back("seed8.whatcoin.cash", true);
+    	vSeeds.emplace_back("seed9.whatcoin.cash", true);
+    	vSeeds.emplace_back("seed10.whatcoin.cash", true);
 
 
         // Whatcoin addresses start with 'r'
