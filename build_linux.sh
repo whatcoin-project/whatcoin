@@ -23,5 +23,5 @@ echo "Starting Linux build.. go pour yourself a coke"
 # Create zip file of binaries
     mkdir ./whatcoin-linux
 	cp src/whatcoind src/whatcoin-cli src/whatcoin-tx src/qt/whatcoin-qt ./whatcoin-linux/
-	zip -r Whatcoin-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip ./whatcoin-linux
+	zip -r Whatcoin-$(git describe --abbrev=0 --tags | sed s/v//)-Ubuntu-$(lsb_release -r -s).zip ./whatcoin-linux
 	rm -rf ./whatcoin-linux
