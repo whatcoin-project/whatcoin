@@ -18,8 +18,7 @@ echo "Starting Windows build.. go pour yourself a coke"
     echo "Building Binaries"
 	./autogen.sh
         ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32
-	./configure --enable-cxx --enable-static --disable-shared --disable-debug --disable-tests --disable-bench --with-pic CPPFLAGS="-fPIC -O3 --param ggc-min-expand=1 --param ggc-min-heapsize=32768" CXXFLAGS="-fPIC -O3 --param ggc-min-expand=1 --param ggc-min-heapsize=32768"
-	make -j$(echo $CPU_CORES) 
+	make -j$(echo $CPU_CORES)
 
 # Create zip file of binaries
     mkdir ./whatcoin-windows
