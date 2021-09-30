@@ -437,16 +437,16 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x22a484c38566c4b11aef6b36603b9731b4546010507c40a1383465832f58c358"));
 
         //vSeeds.clear();
-        vSeeds.emplace_back("seed1.whatcoin.cash", true);
-        vSeeds.emplace_back("seed2.whatcoin.cash", true);
-        vSeeds.emplace_back("seed3.whatcoin.cash", true);
-    	vSeeds.emplace_back("seed4.whatcoin.cash", true);
-    	vSeeds.emplace_back("seed5.whatcoin.cash", true);
-    	vSeeds.emplace_back("seed6.whatcoin.cash", true);
-    	vSeeds.emplace_back("seed7.whatcoin.cash", true);
-    	vSeeds.emplace_back("seed8.whatcoin.cash", true);
-    	vSeeds.emplace_back("seed9.whatcoin.cash", true);
-    	vSeeds.emplace_back("seed10.whatcoin.cash", true);
+        vSeeds.emplace_back("seed1.whatcoin.io", true);
+        vSeeds.emplace_back("seed2.whatcoin.io", true);
+        vSeeds.emplace_back("seed3.whatcoin.io", true);
+    	vSeeds.emplace_back("seed4.whatcoin.io", true);
+    	vSeeds.emplace_back("seed5.whatcoin.io", true);
+    	vSeeds.emplace_back("seed6.whatcoin.io", true);
+    	vSeeds.emplace_back("seed7.whatcoin.io", true);
+    	vSeeds.emplace_back("seed8.whatcoin.io", true);
+    	vSeeds.emplace_back("seed9.whatcoin.io", true);
+    	vSeeds.emplace_back("seed10.whatcoin.io", true);
 
 
         // Whatcoin addresses start with 'r'
@@ -584,10 +584,10 @@ public:
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("seed1.whatcoin.cash", true);
-        vSeeds.emplace_back("seed2.whatcoin.cash", true);
-        vSeeds.emplace_back("seed3.whatcoin.cash", true);
-    	vSeeds.emplace_back("seed4.whatcoin.cash", true);
+        vSeeds.emplace_back("seed1.whatcoin.io", true);
+        vSeeds.emplace_back("seed2.whatcoin.io", true);
+        vSeeds.emplace_back("seed3.whatcoin.io", true);
+    	vSeeds.emplace_back("seed4.whatcoin.io", true);
 
         // Testnet Whatcoin addresses start with 'w'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,135);

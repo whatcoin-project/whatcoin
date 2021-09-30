@@ -33,7 +33,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Whatcoin"
-#define QAPP_ORG_DOMAIN "whatcoin.cash"
+#define QAPP_ORG_DOMAIN "whatcoin.io"
 #define QAPP_APP_NAME_DEFAULT "Whatcoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Whatcoin-Qt-testnet"
 #define QAPP_APP_NAME_DEVNET "Whatcoin-Qt-%s"

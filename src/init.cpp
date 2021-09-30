@@ -662,7 +662,7 @@ std::string HelpMessage(HelpMessageMode mode)
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/whatcoin/whatcoin>";
-    const std::string URL_WEBSITE = "<https://whatcoin.cash>";
+    const std::string URL_WEBSITE = "<https://whatcoin.io>";
 
     return CopyrightHolders(_("Copyright (C)"), 2014, COPYRIGHT_YEAR) + "\n" +
            "\n" +
