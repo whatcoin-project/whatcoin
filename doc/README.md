@@ -1,7 +1,7 @@
 Whatcoin Core
 ==========
 
-This is the official reference wallet for Whatcoin digital currency and comprises the backbone of the Whatcoin peer-to-peer network. You can [download Whatcoin Core](https://www.whatcoin.cash/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Whatcoin digital currency and comprises the backbone of the Whatcoin peer-to-peer network. You can [download Whatcoin Core](https://www.whatcoin.io/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -24,12 +24,12 @@ Drag Whatcoin-Qt to your applications folder, and then run Whatcoin-Qt.
 
 ### Need Help?
 
-* See the [Whatcoin documentation](https://docs.whatcoin.cash)
+* See the [Whatcoin documentation](https://docs.whatcoin.io)
 for help and more information.
 * See the [Whatcoin Developer Documentation](https://whatcoin-docs.github.io/) 
 for technical specifications and implementation details.
 * Ask for help on [Whatcoin Nation Discord](http://whatcoinchat.org)
-* Ask for help on the [Whatcoin Forum](https://whatcoin.cash/forum)
+* Ask for help on the [Whatcoin Forum](https://whatcoin.io/forum)
 
 Building
 ---------------------
@@ -59,7 +59,7 @@ The Whatcoin Core repo's [root README](/README.md) contains relevant information
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [Whatcoin Forum](https://whatcoin.cash/forum), in the Development & Technical Discussion board.
+* Discuss on the [Whatcoin Forum](https://whatcoin.io/forum), in the Development & Technical Discussion board.
 * Discuss on [Whatcoin Nation Discord](http://whatcoinchat.org)
 
 ### Miscellaneous

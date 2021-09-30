@@ -19,5 +19,5 @@ depending on the speed of your computer and network connection, the synchronizat
 process can take anywhere from a few hours to a day or more.
 
 See the Whatcoin documentation at:
-  https://docs.whatcoin.cash
+  https://docs.whatcoin.io
 for more help and information.
