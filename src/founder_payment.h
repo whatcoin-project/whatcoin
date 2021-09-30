@@ -18,7 +18,7 @@
 #include <limits.h>
 using namespace std;
 
-static const string DEFAULT_FOUNDER_ADDRESS = "WWo1Gga7Dem5BRa3oyukUTfssFTgiriJzz";
+static const string DEFAULT_FOUNDER_ADDRESS = "WTYgxUGaGjaZKjwoiS1RcT4smegyZfCoYF";
 struct FounderRewardStructure {
 	int blockHeight;
 	int rewardPercentage;
