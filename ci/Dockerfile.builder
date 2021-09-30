@@ -17,7 +17,7 @@ RUN pip3 install pyzmq # really needed?
 RUN pip3 install jinja2
 
 # whatcoin_hash
-RUN git clone https://github.com/whatcoin/whatcoin_hash
+RUN git clone https://github.com/whatcoin-project/whatcoin_hash
 RUN cd whatcoin_hash && python3 setup.py install
 
 ARG USER_ID=1000
