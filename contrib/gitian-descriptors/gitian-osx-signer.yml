@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/whatcoin/whatcoin-detached-sigs.git"
+- "url": "https://github.com/whatcoin-project/whatcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "whatcoincore-osx-unsigned.tar.gz"

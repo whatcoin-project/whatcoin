@@ -27,8 +27,8 @@ Build-Depends: debhelper,
  libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://www.whatcoin.io/
-Vcs-Git: git://github.com/whatcoin/whatcoin.git
-Vcs-Browser: https://github.com/whatcoin/whatcoin
+Vcs-Git: git://github.com/whatcoin-project/whatcoin.git
+Vcs-Browser: https://github.com/whatcoin-project/whatcoin
 
 Package: whatcoind
 Architecture: any

@@ -4,7 +4,7 @@ run using Python 3 but are compatible with Python 2.
 
 ## Step 0: Install whatcoin_hash
 
-https://github.com/whatcoin/whatcoin_hash
+https://github.com/whatcoin-project/whatcoin_hash
 
 ## Step 1: Download hash list
 
