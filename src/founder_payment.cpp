@@ -56,7 +56,7 @@ void FounderPayment::FillFounderPayment(CMutableTransaction& txNew, int nBlockHe
     txNew.vout.push_back(txoutFounderRet);
 	if (nBlockHeight < newFounderAddressStartBlock) {
 		LogPrintf("FounderPayment::FillFounderPayment -- Founder payment %lld to %s\n", founderPayment, founderAddress.c_str());
-	else {
+	} else {
 		LogPrintf("FounderPayment::FillFounderPayment -- Founder payment %lld to %s\n", founderPayment, newFounderAddress.c_str());
 	}
 }
