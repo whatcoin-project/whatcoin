@@ -42,7 +42,7 @@ public:
 	int getStartBlock() {return this->startBlock;}
 private:
 	string founderAddress;
-	string newFounderAddress
+	string newFounderAddress;
 	int newFounderAddressStartBlock;
 	int startBlock;
 	vector<FounderRewardStructure> rewardStructures;
