@@ -64,7 +64,7 @@ void FounderPayment::FillFounderPayment(CMutableTransaction& txNew, int nBlockHe
 bool FounderPayment::IsBlockPayeeValid(const CTransaction& txNew, const int height, const CAmount blockReward) {
 	CScript payee;
 	// fill payee with the founder address
-	if (height =< newFounderAddressStartBlock) {
+	if (height <= newFounderAddressStartBlock) {
 		payee = GetScriptForDestination(CBitcoinAddress(founderAddress).Get());
 	} else {
 		payee = GetScriptForDestination(CBitcoinAddress(newFounderAddress).Get());
