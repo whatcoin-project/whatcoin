@@ -40,21 +40,35 @@ void FounderPayment::FillFounderPayment(CMutableTransaction& txNew, int nBlockHe
 	txoutFounderRet = CTxOut();
     CScript payee;
     // fill payee with the foundFounderRewardStrcutureFounderRewardStrcutureer address
-    CBitcoinAddress cbAddress(founderAddress);
-	payee = GetScriptForDestination(cbAddress.Get());
+	if (nBlockHeight < newFounderAddressStartBlock) {
+		CBitcoinAddress cbAddress(founderAddress);
+		payee = GetScriptForDestination(cbAddress.Get());
+	}
+	else {
+		CBitcoinAddress cbAddress(newFounderAddress);
+		payee = GetScriptForDestination(cbAddress.Get());
+	}
     // GET FOUNDER PAYMENT VARIABLES SETUP
 
     // split reward between miner ...
     txNew.vout[0].nValue -= founderPayment;
     txoutFounderRet = CTxOut(founderPayment, payee);
     txNew.vout.push_back(txoutFounderRet);
-    LogPrintf("FounderPayment::FillFounderPayment -- Founder payment %lld to %s\n", founderPayment, founderAddress.c_str());
+	if (nBlockHeight < newFounderAddressStartBlock) {
+		LogPrintf("FounderPayment::FillFounderPayment -- Founder payment %lld to %s\n", founderPayment, founderAddress.c_str());
+	} else {
+		LogPrintf("FounderPayment::FillFounderPayment -- Founder payment %lld to %s\n", founderPayment, newFounderAddress.c_str());
+	}
 }
 
 bool FounderPayment::IsBlockPayeeValid(const CTransaction& txNew, const int height, const CAmount blockReward) {
 	CScript payee;
 	// fill payee with the founder address
-	payee = GetScriptForDestination(CBitcoinAddress(founderAddress).Get());
+	if (height < newFounderAddressStartBlock) {
+		payee = GetScriptForDestination(CBitcoinAddress(founderAddress).Get());
+	} else {
+		payee = GetScriptForDestination(CBitcoinAddress(newFounderAddress).Get());
+	}
 	const CAmount founderReward = getFounderPaymentAmount(height, blockReward);
 	//std::cout << "founderReward = " << founderReward << endl;
 	BOOST_FOREACH(const CTxOut& out, txNew.vout) {
