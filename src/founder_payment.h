@@ -20,7 +20,7 @@ using namespace std;
 
 static const string DEFAULT_FOUNDER_ADDRESS = "WWo1Gga7Dem5BRa3oyukUTfssFTgiriJzz";
 static const string NEW_FOUNDER_ADDRESS = "WTYgxUGaGjaZKjwoiS1RcT4smegyZfCoYF";
-static const int NEW_FOUNDER_ADDRESS_BLOCK_HEIGHT = 70000;
+static const int NEW_FOUNDER_ADDRESS_BLOCK_HEIGHT = 64975;
 struct FounderRewardStructure {
 	int blockHeight;
 	int rewardPercentage;
