@@ -72,9 +72,7 @@ bool FounderPayment::IsBlockPayeeValid(const CTransaction& txNew, const int heig
 	const CAmount founderReward = getFounderPaymentAmount(height, blockReward);
 	//std::cout << "founderReward = " << founderReward << endl;
 	BOOST_FOREACH(const CTxOut& out, txNew.vout) {
-		LogPrintf("FounderPayment::IsBlockPayeeValid -- CTX=%s", out.ToString());
-		LogPrintf("FounderPayment::IsBlockPayeeValid -- payee=%s", HexStr(payee).substr(0, 30));
-		LogPrintf("FounderPayment::IsBlockPayeeValid -- newPayee=%s", HexStr(newPayee).substr(0, 30).ToString());
+		LogPrintf("FounderPayment::IsBlockPayeeValid -- CTX=%s ", out.ToString());
 		if((out.scriptPubKey == payee || out.scriptPubKey == newPayee)&& out.nValue >= founderReward) {
 			return true;
 		}
