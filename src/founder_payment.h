@@ -18,7 +18,9 @@
 #include <limits.h>
 using namespace std;
 
-static const string DEFAULT_FOUNDER_ADDRESS = "WTYgxUGaGjaZKjwoiS1RcT4smegyZfCoYF";
+static const string DEFAULT_FOUNDER_ADDRESS = "WWo1Gga7Dem5BRa3oyukUTfssFTgiriJzz";
+static const string NEW_FOUNDER_ADDRESS = "WTYgxUGaGjaZKjwoiS1RcT4smegyZfCoYF";
+static const int NEW_FOUNDER_ADDRESS_BLOCK_HEIGHT = 64975;
 struct FounderRewardStructure {
 	int blockHeight;
 	int rewardPercentage;
@@ -26,8 +28,10 @@ struct FounderRewardStructure {
 
 class FounderPayment {
 public:
-	FounderPayment(vector<FounderRewardStructure> rewardStructures = {}, int startBlock = 0, const string &address = DEFAULT_FOUNDER_ADDRESS) {
+	FounderPayment(vector<FounderRewardStructure> rewardStructures = {}, int startBlock = 0, const string &address = DEFAULT_FOUNDER_ADDRESS, const string &newAddress =  NEW_FOUNDER_ADDRESS, int newAddressStartBlock = NEW_FOUNDER_ADDRESS_BLOCK_HEIGHT ) {
 		this->founderAddress = address;
+		this->newFounderAddress = newAddress;
+		this->newFounderAddressStartBlock = newAddressStartBlock;
 		this->startBlock = startBlock;
 		this->rewardStructures = rewardStructures;
 	}
@@ -38,6 +42,8 @@ public:
 	int getStartBlock() {return this->startBlock;}
 private:
 	string founderAddress;
+	string newFounderAddress;
+	int newFounderAddressStartBlock;
 	int startBlock;
 	vector<FounderRewardStructure> rewardStructures;
 };
