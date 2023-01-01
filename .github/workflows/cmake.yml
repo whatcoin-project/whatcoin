@@ -1,0 +1,45 @@
+name: CMake
+
+on: [push]
+
+env:
+  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    # The CMake configure and build commands are platform agnostic and should work equally
+    # well on Windows or Mac.  You can convert this to a matrix build if you need
+    # cross-platform coverage.
+    # See: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependeces
+      working-directory: ${{github.workspace}}
+      shell: bash
+      run: |
+          sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils cmake
+          sudo apt-get install libboost-all-dev libsodium-dev
+          cd ..
+          git clone https://github.com/whatcoin-project/boost.git
+          cd boost
+          ./bootstrap.sh 
+          cd ..
+          git clone https://github.com/whatcoin-project/whatcoin-old.git
+    - name: CMAKE
+      working-directory: ${{github.workspace}}
+      shell: bash
+      run: |
+          ./configure
+          cmake ..
+          
+    - name: Build
+      working-directory: ${{github.workspace}}/build
+      shell: bash
+      run: |
+        make
+
+  
+
