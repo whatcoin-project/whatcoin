@@ -32,18 +32,11 @@ jobs:
           sudo ./b2 install
           cd ..
           git clone https://github.com/whatcoin-project/whatcoin-old.git
-    - name: CMAKE
+    - name: build
       working-directory: ${{github.workspace}}
       shell: bash
       run: |
-          ./configure
-          cmake ..
-          
-    - name: Build
-      working-directory: ${{github.workspace}}/build
-      shell: bash
-      run: |
-        make
+          ./build_linux.sh
 
   
 
