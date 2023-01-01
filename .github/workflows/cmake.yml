@@ -23,9 +23,13 @@ jobs:
           sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils cmake
           sudo apt-get install libboost-all-dev libsodium-dev
           cd ..
-          git clone https://github.com/whatcoin-project/boost.git
+          mkdir boost
           cd boost
-          ./bootstrap.sh 
+          wget https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.gz
+          tar xvf boost_1_80_0.tar.gz
+          cd boost_1_80_0
+          ./bootstrap.sh --prefix=/usr/
+          sudo ./b2 install
           cd ..
           git clone https://github.com/whatcoin-project/whatcoin-old.git
     - name: CMAKE
